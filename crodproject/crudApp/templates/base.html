@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+       <div class="desktop-menu">
+        <a href="{% url 'homePage'%}">Main</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+       </div>
+       <a href="#" class="burger-menu-button" onclick="burgerMenuAction()"><i class="fa-solid fa-bars"></i></a>
+       <div id="mobile_menu" style="display: none;">
+        <a href="">Main</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+       </div>
+       </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div id="main-content" class="welcome">
+         <h1 class="app">Welcome to my web app</h1>
+         <p>Welcome to my new site about Counter-Strike 2, you can find out about all the new products here. Since the new counter-strike 2 will be released this summer. In my web app You will learn about new innovations and chips and last news about Counter-Strike 2. After all, all players and fans are looking forward to this new project</p>
+          <a href="https://www.youtube.com/playlist?list=PLSXFSBSGcg47s49HH5ZpSMRUaL5pBlcXc" class="all-button">View more</a>
+        </div>
+        <div class="container">
+        <h2 class="title">Counter Strike 2</h2>
+        <div class="card">
+        <div class="card-body">
+        <h3>Smoke</h3>
+        <p>One of the biggest updates that Valve highlighted in its announcement of Counter-Strike 2 was the strides the engine has made in terms of smoke grenades. In Counter-Strike 2, smokes are more responsive to their surroundings and can be affected by light, gunshots, grenades and other objects in the environment. In CS:GO, smokes were more like an opaque part of the player’s view that was activated by the release of a smoke grenade. In Counter-Strike 2, smokes are a dynamic part of the game because they are now coded as three-dimensional objects.</p>
+        <a href="https://www.dexerto.com/counter-strike-2/all-smoke-changes-in-counter-strike-2-2093984/" class="primary-button">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="smoke-pictures">
+        <img src="static/img/WhatsApp Image 2023-04-18 at 07.31.37 (2).jpeg" alt="" width="500" height="300" class="trash">
+        <img src="static/img/WhatsApp Image 2023-04-18 at 07.31.36 (1).jpeg" alt="" width="500" height="300" class="wow-smoke">
+        <p class = "smoke-text">In one of the announcement videos for the new game, Valve highlighted the big changes for smokes. Smokes in the new game will grow to fill spaces in the map and all players will also see the same smoke on their screens. Previously, players could create one-way smokes in which one player would be able to see through parts of it and others would have their vision completely obstructed. In other iterations of Counter-Strike, smokes could also be a bit finicky with how much they expanded and wasn’t consistent in the vision it obstructed from the same position.</p>
+    </div>
+    <div class="molotov">
+        <div class="molik">
+        <div class="molik-body">
+        <h3>Molotov</h3>
+        <p>This new molotov seems largely inspired by a CS:GO fan project from three years ago. As noted by GamesRadar+, the Molotov Rework V2 from Zool gave CS:GO's firebomb better glass-shattering sound effects, better Zippo sound and particle effects, and the rag way more fire than in the base game. It looks a lot like what we see in the gif on the CS2 website, but for one thing suggested by a fan: "the Half-Life: Alyx liquid shader just to have the sexiest molotov."</p>
+        <a href=https://www.thegamer.com/minecraft-tricks-tips-you-may-not-know/ class="primary-button">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="gifka">
+   <img src="static/img/WhatsApp Image 2023-04-18 at 07.31.37 (1).jpeg" alt="" width="500" height="300" class="titanik">
+   <img src="static/img/WhatsApp Image 2023-04-18 at 07.31.38 (1).jpeg" alt="" width="500" height="300" class="cartinka" >
+    <p class="moly">There's a lot more than just liquid-filled bottles coming in Counter-Strike 2. Blood spatter is now directional, with patches of red on walls revealing at what angle either you or a teammate were shot. Better fires and explosions are all thanks to Source 2's improved lighting, and a total UI overhaul will bring CS2 into the modern age.It all looks incredible, which explains why some Counter-Strike fans are going to extreme lengths to get invited into the limited technical test that's going on right now. The test is invitation only, but one of the metrics is playtime. So some people are just sitting idle in CS:GO deathmatches hoping to rack up enough playtime to warrant an invite.</p>
+   </div>
+</main>
+    <script src="{% static './script.js/script.js'%}"></script>
+</body>
+</html>
